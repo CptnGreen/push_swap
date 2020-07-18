@@ -21,17 +21,17 @@ EXEC_PS = push_swap.out
 
 SRC_DIR_PS = src/push_swap
 SRC_RAW_PS = \
-	     swap_a.c \
-	     swap_b.c \
-	     swap_both.c \
-	     push_a.c \
-	     push_b.c \
-	     rotate_a.c \
-	     rotate_b.c \
-	     rotate_both.c \
-	     reverse_rotate_a.c \
-	     reverse_rotate_b.c \
-	     reverse_rotate_both.c
+		swap_a.c \
+		swap_b.c \
+		swap_both.c \
+		push_a.c \
+		push_b.c \
+		rotate_a.c \
+		rotate_b.c \
+		rotate_both.c \
+		reverse_rotate_a.c \
+		reverse_rotate_b.c \
+		reverse_rotate_both.c
 SRC_PS = $(addprefix $(SRC_DIR_PS)/,$(SRC_RAW_PS))
 
 OBJ_DIR = obj
