@@ -1,22 +1,38 @@
-#ifndef __PUSH_SWAP_H_
-# define __PUSH_SWAP_H_
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
 
 # include "libftprintf.h"
+
+/*
+**  Data structures:
+*/
+
+typedef struct		s_stacks{
+    struct s_stack	*a;
+    struct s_stack	*b;
+}					t_stacks;
+
+typedef struct		s_stack{
+    int			num;
+    struct s_stack	*next;
+}					t_stack;
 
 /*
 ** Given operations:
 */
 
-int	swap_a(void);
-int	swap_b(void);
-int	swap_both(void);
-int	push_a(void);
-int	push_b(void);
-int	rotate_a(void);
-int	rotate_b(void);
-int	rotate_both(void);
-int	reverse_rotate_a(void);
-int	reverse_rotate_b(void);
-int	reverse_rotate_both(void);
+int	swap(t_stack *c);
+int	swap_both(t_stacks *stacks);
+int	push(t_stack *c);
+int	rotate(t_stack *c);
+int	rotate_both(t_stacks *stacks);
+int	reverse_rotate(t_stack *c);
+int	reverse_rotate_both(t_stacks *stacks);
 
-#endif // __PUSH_SWAP_H_
+/*
+** Other functions:
+*/
+
+/* int	init_stacks(t_stacks *stacks); */
+
+#endif

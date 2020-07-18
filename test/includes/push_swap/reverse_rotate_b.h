@@ -1,5 +1,0 @@
-#ifndef REVERSE_ROTATE_B_H
-#define REVERSE_ROTATE_B_H
-
-
-#endif // REVERSE_ROTATE_B_H

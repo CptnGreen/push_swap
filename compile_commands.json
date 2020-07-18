@@ -1,0 +1,29 @@
+[
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-Werror",
+            "-Wextra",
+            "obj/swap.o",
+            "obj/swap_both.o",
+            "obj/push.o",
+            "obj/rotate.o",
+            "obj/rotate_both.o",
+            "obj/reverse_rotate.o",
+            "obj/reverse_rotate_both.o",
+            "-I",
+            "includes/",
+            "-I",
+            "ft_printf/includes/",
+            "-I",
+            "ft_printf/libft/includes/",
+            "-o",
+            "push_swap.out",
+            "src/push_swap/main.c"
+        ],
+        "directory": "/home/ak/Projects/push_swap",
+        "file": "src/push_swap/main.c"
+    }
+]

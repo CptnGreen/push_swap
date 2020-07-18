@@ -21,16 +21,12 @@ EXEC_PS = push_swap.out
 
 SRC_DIR_PS = src/push_swap
 SRC_RAW_PS = \
-		swap_a.c \
-		swap_b.c \
+		swap.c \
 		swap_both.c \
-		push_a.c \
-		push_b.c \
-		rotate_a.c \
-		rotate_b.c \
+		push.c \
+		rotate.c \
 		rotate_both.c \
-		reverse_rotate_a.c \
-		reverse_rotate_b.c \
+		reverse_rotate.c \
 		reverse_rotate_both.c
 SRC_PS = $(addprefix $(SRC_DIR_PS)/,$(SRC_RAW_PS))
 
@@ -44,7 +40,7 @@ MAIN_PS = $(addprefix $(SRC_DIR_PS)/,$(MAIN_RAW_PS))
 
 all: push_swap
 
-asm: libftprintf $(OBJ_DIR) $(OBJ_PS)
+push_swap: libftprintf $(OBJ_DIR) $(OBJ_PS)
 	$(CC) $(CFLAGS) -o $(EXEC_PS) $(OBJ_PS) $(MAIN_PS) \
 		-I "includes/" \
 		-I "ft_printf/includes/" \
