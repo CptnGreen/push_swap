@@ -1,1 +1,6 @@
-#include "reverse_rotate_b.h"
+#include "push_swap.h"
+
+int	reverse_rotate_b(void)
+{
+    return (0);
+}
