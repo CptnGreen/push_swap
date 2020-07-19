@@ -1,1 +1,6 @@
-#include "swap_a.h"
+#include "push_swap.h"
+
+int	swap_a(void)
+{
+    return (0);
+}

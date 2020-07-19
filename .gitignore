@@ -1,3 +1,8 @@
+.ccls-cache
+build
+push_swap.out
+obj
+
 # Prerequisites
 *.d
 
