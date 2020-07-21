@@ -35,14 +35,12 @@
     - -:test/support
   :source:
     - src/**
-    - src/push_swap/**
     - ft_printf/src/**
     - ft_printf/libft/src/**
   :include:
     - includes/**
     - ft_printf/includes/**
     - ft_printf/libft/includes/**
-    - test/includes/push_swap/**
   :support:
     - test/support
   :libraries: [ft_printf/libft, ft_printf]

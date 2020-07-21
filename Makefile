@@ -27,7 +27,9 @@ SRC_RAW_PS = \
 		rotate.c \
 		rotate_both.c \
 		reverse_rotate.c \
-		reverse_rotate_both.c
+		reverse_rotate_both.c \
+		init_stack.c \
+		print_stack.c
 SRC_PS = $(addprefix $(SRC_DIR_PS)/,$(SRC_RAW_PS))
 
 OBJ_DIR = obj
