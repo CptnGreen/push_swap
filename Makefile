@@ -12,7 +12,7 @@
 
 .PHONY: all clean fclean re libftprintf norm push_swap checker test
 
-CC = clang
+CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 
 # --------------- PUSH_SWAP: PREREQUISITES ------------------
