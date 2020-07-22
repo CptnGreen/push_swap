@@ -1,7 +1,20 @@
 #include "push_swap.h"
 
-int	rotate(t_stack *c)
+int	rotate(t_stack **s)
 {
-    c = NULL; // just to silence the compiler
-    return (0);
+    t_stack	*old_top;
+    t_stack	*cur;
+
+    if ((*s) && (*s)->next)
+    {
+        old_top = (*s);
+        (*s) = (*s)->next;
+        cur = (*s);
+        while (cur->next)
+            cur = cur->next;
+        cur->next = old_top;
+        old_top->next = NULL;
+        return (OK);
+    }
+    return (KO);
 }

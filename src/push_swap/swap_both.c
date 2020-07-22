@@ -1,7 +1,8 @@
 #include "push_swap.h"
 
 /*
-** This one returns KO if both swaps failed (returned KO).
+** This one returns KO if nothing happened,
+** i.e. both swaps failed (returned KO).
 **
 ** Otherwise it returns OK.
 */
