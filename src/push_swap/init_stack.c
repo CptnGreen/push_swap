@@ -36,7 +36,7 @@ int		is_valid(size_t num, int *tab, size_t size)
 
 /*
 ** This function receives integer array and its size.
-** If either of these if zero, it returns NULL.
+** If either of these is zero, it returns NULL.
 ** Else it initializes corresponding stack
 ** (with array's first number at the top of it).
 */

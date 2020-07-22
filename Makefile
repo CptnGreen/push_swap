@@ -12,7 +12,7 @@
 
 .PHONY: all clean fclean re libftprintf norm push_swap checker test
 
-CC = gcc
+CC = clang
 CFLAGS = -Wall -Werror -Wextra
 
 # --------------- PUSH_SWAP: PREREQUISITES ------------------
@@ -21,6 +21,7 @@ EXEC_PS = push_swap.out
 
 SRC_DIR_PS = src/push_swap
 SRC_RAW_PS = \
+		main.c \
 		swap.c \
 		swap_both.c \
 		push.c \
@@ -35,15 +36,12 @@ SRC_PS = $(addprefix $(SRC_DIR_PS)/,$(SRC_RAW_PS))
 OBJ_DIR = obj
 OBJ_PS = $(addprefix $(OBJ_DIR)/,$(SRC_RAW_PS:.c=.o))
 
-MAIN_RAW_PS = main.c
-MAIN_PS = $(addprefix $(SRC_DIR_PS)/,$(MAIN_RAW_PS))
-
 # --------------- PUSH_SWAP: COMPILATION --------------------
 
 all: push_swap
 
 push_swap: libftprintf $(OBJ_DIR) $(OBJ_PS)
-	$(CC) $(CFLAGS) -o $(EXEC_PS) $(OBJ_PS) $(MAIN_PS) \
+	$(CC) $(CFLAGS) -o $(EXEC_PS) $(OBJ_PS) \
 		-I "includes/" \
 		-I "ft_printf/includes/" \
 		-I "ft_printf/libft/includes/" \

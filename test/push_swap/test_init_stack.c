@@ -23,6 +23,7 @@ void test_valid_array(void)
         TEST_ASSERT_EQUAL_INT(t[i++], s->num);
         s = s->next;
     }
+    TEST_ASSERT_NULL(s);
 }
 
 void test_invalid_array(void)
