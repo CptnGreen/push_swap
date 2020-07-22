@@ -33,7 +33,7 @@ int			swap_both(t_stacks *stacks);
 int			push(t_stack **to, t_stack **from);
 int			rotate(t_stack **c);
 int			rotate_both(t_stacks *stacks);
-int			reverse_rotate(t_stack *c);
+int			reverse_rotate(t_stack **c);
 int			reverse_rotate_both(t_stacks *stacks);
 
 /*

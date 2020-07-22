@@ -9,10 +9,10 @@
 
 int	swap_both(t_stacks *s)
 {
-    int	res;
+    int	res1;
+    int	res2;
 
-    res = 0;
-    res = swap(s->a);
-    res = swap(s->b);
-    return ((res == OK) ? OK : KO);
+    res1 = swap(s->a);
+    res2 = swap(s->b);
+    return ((res1 == OK || res2 == OK) ? OK : KO);
 }

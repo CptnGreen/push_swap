@@ -1,7 +1,11 @@
 #include "push_swap.h"
 
-int	rotate_both(t_stacks *stacks)
+int	rotate_both(t_stacks *s)
 {
-    stacks = NULL; // just to silence the compiler
-    return (0);
+    int	res1;
+    int	res2;
+
+    res1 = rotate(&(s->a));
+    res2 = rotate(&(s->b));
+    return ((res1 == OK || res2 == OK) ? OK : KO);
 }
