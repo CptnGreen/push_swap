@@ -2,6 +2,14 @@
 
 int	swap(t_stack *c)
 {
-    c = NULL; // just to silence the compiler
-    return (0);
+    int	a;
+
+    if (c && c->next)
+    {
+        a = c->num;
+        c->num = c->next->num;
+        c->next->num = a;
+        return (OK);
+    }
+    return (KO);
 }

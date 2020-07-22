@@ -53,7 +53,6 @@ void test_notnull_to_null(void)
     TEST_ASSERT_EQUAL_INT(2, a->num);
 }
 
-
 void test_null_to_null(void)
 {
     t_stack	*a;
