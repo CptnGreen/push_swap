@@ -42,5 +42,6 @@ int			reverse_rotate_both(t_stacks *stacks);
 
 int			print_stack(t_stack *s);
 t_stack		*init_stack(int *tab, size_t size);
+t_stacks	*init_stacks(int *t_a, size_t size_a, int *t_b, size_t size_b);
 
 #endif
